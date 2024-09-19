@@ -9,6 +9,14 @@
   <url>https://github.com/eldaniii</url>
   <dependencies>
 
+    <!-- Dependencia par el uso de Servlets -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.1.0</version>
+      <scope>provided</scope> <!-- Esto indica que el contenedor del servidor (como Tomcat, Jetty, o cualquier servidor de aplicaciones compatible con Jakarta EE) proporcionará esta dependencia en tiempo de ejecución. -->
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -31,6 +39,7 @@
       <artifactId>slf4j-api</artifactId>
       <version>2.0.16</version>
     </dependency>
+
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
